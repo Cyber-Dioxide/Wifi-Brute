@@ -2,7 +2,7 @@
 A tool to crack a wifi password with a help of wordlist. This may take long to crack a wifi depending upon number of passwords your wordlist contains. I've make it as fast as possible
 
 # Usage
-1. git clone https://github.com/Saadkhan041/WiBrute
+1. git clone https://github.com/Saadkhan041/Wifi-Brute
 2. cd WiBrute
 3. chmod +x *
 4. python3 wifi-brute.py
