@@ -16,6 +16,18 @@ webbrowser.open("Head.html")
 yes = ["y" , "yes"]
 no = ["no" , "n"]
 
+def rootCHEK():
+    s = os.popen("whoami").read()
+    print(s)
+    if ("root") in s:
+        print("You are root")
+        pass
+    else:
+        print("Run this tool as root")
+        exit()
+rootCHEK()
+
+
 clear()
 
 sprint(f"\n\n{r} Note: {c}This tool is only made for educational purpose... -_+")
