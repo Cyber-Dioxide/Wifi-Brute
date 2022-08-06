@@ -11,7 +11,7 @@ from scripts.colors import ran,y,r,g,c
 import time
 import webbrowser
 
-webbrowser.open("Head.html")
+# webbrowser.open("Head.html")
 
 yes = ["y" , "yes"]
 no = ["no" , "n"]
@@ -51,7 +51,7 @@ else:
         exit(0)
 
 
-passwords = [x.strip("\n") for x in open(passlist , "r").readlines()]
+passwords = [x.strip("\n") for x in open(passlist , "r", encoding="UTF-8" , errors="ignore").readlines()]
 tried = [x.strip("\n").split("--")[0] for x in open("avail_nearby_wifis.txt","r").readlines()]
 found = [x.strip("\n") for x in open("already_tried_passwords.txt","r").readlines()]
 ts = 15
@@ -70,7 +70,8 @@ def main():
     num = len(scanner)
 
     print(f"{r}Number of wifi found: {ran}{str(num)}")
-
+    input(f"{y}\nPress enter to start___")
+          
     for i,x in enumerate(scanner):
         res = test(num-i , inface , x , passwords , ts)
 
