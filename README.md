@@ -3,7 +3,6 @@ A tool to crack a wifi password with a help of wordlist. This may take long to c
 
 # Youtube
 * Watch the tutotrial on youtube.
-## Rumble
 
 * https://rumble.com/embed/v26ifyc/?pub=1teq9a
 * https://www.youtube.com/watch?v=7phH_FvoCfw
