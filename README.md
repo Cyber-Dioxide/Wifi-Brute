@@ -4,8 +4,9 @@ A tool to crack a wifi password with a help of wordlist. This may take long to c
 # Youtube
 * Watch the tutotrial on youtube.
 
-* https://rumble.com/embed/v26ifyc/?pub=1teq9a
 * https://www.youtube.com/watch?v=7phH_FvoCfw
+
+* https://rumble.com/embed/v26ifyc/?pub=1teq9a
 # Usage
 1. git clone https://github.com/Cyber-Dioxide/Wifi-Brute
 2. cd Wifi-Brute
