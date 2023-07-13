@@ -5,6 +5,10 @@ A tool to crack a wifi password with a help of wordlist. This may take long to c
 * Get easy and working wifi hacking course dm me on instagram @coding_memz
 * Get 14M password lost containing worlds top used passwords dm me on instagram @coding_memz
 
+# Update
+This tool is no longer updated, i have created ore advanced and fast version of it for windows. If you are intrested to buy dm me on telegram @coding_memz
+![Screenshot 2023-07-13 151642](https://github.com/Cyber-Dioxide/Wifi-Brute/assets/93708296/10954859-f9d4-4312-8e2e-a64a89149532)
+
 # Youtube
 * Watch the tutotrial on youtube.
 
@@ -17,6 +21,7 @@ A tool to crack a wifi password with a help of wordlist. This may take long to c
 
   
 # Usage
+
 1. git clone https://github.com/Cyber-Dioxide/Wifi-Brute
 2. cd Wifi-Brute
 3. chmod +x *
