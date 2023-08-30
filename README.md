@@ -16,6 +16,7 @@ This tool is no longer updated, i have created ore advanced and fast version of 
 * https://rumble.com/embed/v26ifyc/?pub=1teq9a
 
 # Telegram
+* Join Telegram Channel https://t.me/cyber_dioxid
 * Contact me on telegram @coding_memz
 
   
