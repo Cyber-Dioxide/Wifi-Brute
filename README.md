@@ -2,15 +2,15 @@
 A tool to crack a wifi password with a help of wordlist. This may take long to crack a wifi depending upon number of passwords your wordlist contains.
 
 # Tutorial / Youtube
-* Check out the latest Blog on Wifi Hacking with WifiBrute
-* [Hack Wifi In  A Click](https://www.cyberdioxide.com/2023/11/wifi-hacking-hacking-your-neeighbours.html)
+
 
   
 * Watch the tutotrial on youtube.
 
 * https://www.youtube.com/watch?v=7phH_FvoCfw
 * https://rumble.com/embed/v26ifyc/?pub=1teq9a
-* 
+* Check out the latest Blog on Wifi Hacking with WifiBrute
+* [Hack Wifi In  A Click](https://www.cyberdioxide.com/2023/11/wifi-hacking-hacking-your-neeighbours.html)
 # Service
 * Get a paid worlds best top rated hacking course dm me on instagram @coding_memz
 * Get easy and working wifi hacking course dm me on instagram @coding_memz
