@@ -23,7 +23,8 @@ logo = f"""
   ███    ███   ███    ███ ███    ███     ███       ███    ███ 
 ▄█████████▀    ███    ███ ████████▀     ▄████▀     ██████████ 
                ███    ███                                     
-                          {c.c + "Author: "+c.y+"Saad Khan | Cyber-Dioxide"}                                                                                                                                   
+                          {c.c + "Author: "+c.y+"Saad Khan | Cyber-Dioxide"}   
+                          {c.c + "Telegram: "+c.y+"@cyberdioxide"}
 """
 try:
     from colorama import Fore, Style
