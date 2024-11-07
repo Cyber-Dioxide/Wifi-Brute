@@ -24,7 +24,7 @@ This tool is no longer updated, i have created ore advanced and fast version of 
 
 # Telegram
 * Join Telegram Channel https://t.me/+rJsw9yTcuGRhYWYx
-* Contact me on [Telegram](https://www.cyberdioxide.com/p/contact.html)
+* Contact me on [Telegram](https://www.cyox2.com/p/contact.html)
 
   
 # Usage
